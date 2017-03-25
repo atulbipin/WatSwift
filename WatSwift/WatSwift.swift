@@ -64,7 +64,9 @@ extension WatBase {
 }
 
 public struct API: WatBase {
-    
+	
+	
+	public static let sharedInstance = API()
     
     /**
      [GET /api/usage](https://github.com/uWaterloo/api-documentation/blob/master/v2/api/usage.md)
@@ -131,6 +133,8 @@ public struct API: WatBase {
 }
 
 public struct Awards: WatBase {
+	
+	public static let sharedInstance = Awards()
     
     /**
      [GET /awards/graduate](https://github.com/uWaterloo/api-documentation/blob/master/v2/awards/graduate.md)
@@ -159,6 +163,8 @@ public struct Awards: WatBase {
 }
 
 public struct Blogs: WatBase {
+	
+	public static let sharedInstance = Blogs()
     
     /**
      [GET /blogs/{site}](https://github.com/uWaterloo/api-documentation/blob/master/v2/blogs/blogs_site.md)
@@ -192,7 +198,9 @@ public struct Blogs: WatBase {
 }
 
 public struct Buildings: WatBase {
-    
+	
+	public static let sharedInstance = Buildings()
+	
     /**
      [GET /buildings/list](https://github.com/uWaterloo/api-documentation/blob/master/v2/buildings/list.md)
      
@@ -265,6 +273,8 @@ public struct Buildings: WatBase {
 }
 
 public struct Codes: WatBase {
+	
+	public static let sharedInstance = Codes()
     
     public enum CodeType: String {
     
@@ -319,6 +329,8 @@ public struct Codes: WatBase {
 }
 
 public struct Courses: WatBase {
+	
+	public static let sharedInstance = Courses()
     
     /**
      [GET /courses](https://github.com/uWaterloo/api-documentation/blob/master/v2/courses/courses.md)
@@ -439,6 +451,8 @@ public struct Courses: WatBase {
 }
 
 public struct Events: WatBase {
+	
+	public static let sharedInstance = Events()
     
     
     /**
@@ -497,6 +511,8 @@ public struct Events: WatBase {
 }
 
 public struct Feds: WatBase {
+	
+	public static let sharedInstance = Feds()
     
     /**
      [GET /feds/events](https://github.com/uWaterloo/api-documentation/blob/master/v2/feds/events.md)
@@ -539,7 +555,9 @@ public struct Feds: WatBase {
 }
 
 public struct FoodServices: WatBase {
-    
+	
+	public static let sharedInstance = FoodServices()
+	
     /**
      [GET /foodservices/{year}/{week}/menu](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/year_week_menu.md)
      
@@ -685,7 +703,9 @@ public struct FoodServices: WatBase {
 }
 
 public struct News: WatBase {
-    
+	
+	public static let sharedInstance = News()
+	
     /**
      [GET /news](https://github.com/uWaterloo/api-documentation/blob/master/v2/news/news.md)
      
@@ -731,6 +751,8 @@ public struct News: WatBase {
 }
 
 public struct Opportunities: WatBase {
+	
+	public static let sharedInstance = Opportunities()
     
     /**
      [GET /opportunities](https://github.com/uWaterloo/api-documentation/blob/master/v2/opportunities/opportunities.md)
@@ -776,7 +798,9 @@ public struct Opportunities: WatBase {
 }
 
 public struct Parking: WatBase {
-    
+	
+	public static let sharedInstance = Parking()
+	
     public enum MeterType: String {
         
         /**
@@ -848,6 +872,8 @@ public struct Parking: WatBase {
 }
 
 public struct Directory: WatBase {
+	
+	public static let sharedInstance = Directory()
     
     /**
      [GET /directory/{user_id}](https://github.com/uWaterloo/api-documentation/blob/master/v2/courses/courses.md)
@@ -864,6 +890,8 @@ public struct Directory: WatBase {
 }
 
 public struct PointsOfInterest: WatBase {
+	
+	public static let sharedInstance = PointsOfInterest()
     
     public enum PoiType: String {
         /**
@@ -950,6 +978,8 @@ public struct PointsOfInterest: WatBase {
 }
 
 public struct Resources: WatBase {
+	
+	public static let sharedInstance = Resources()
     
     public enum ResourceType: String {
         
@@ -1003,7 +1033,9 @@ public struct Resources: WatBase {
 }
 
 public struct Server: WatBase {
-    
+	
+	public static let sharedInstance = Server()
+	
     /**
      [GET /server/time](https://github.com/uWaterloo/api-documentation/blob/master/v2/server/time.md)
      
@@ -1031,6 +1063,8 @@ public struct Server: WatBase {
 }
 
 public struct Services: WatBase {
+	
+	public static let sharedInstance = Services()
     
     /**
      [GET /services/{site}](https://github.com/uWaterloo/api-documentation/blob/master/v2/services/services_site.md)
@@ -1049,6 +1083,8 @@ public struct Services: WatBase {
 }
 
 public struct Terms: WatBase {
+	
+	public static let sharedInstance = Terms()
     
     /**
      [GET /terms/list](https://github.com/uWaterloo/api-documentation/blob/master/v2/terms/list.md)
@@ -1168,7 +1204,9 @@ public struct Terms: WatBase {
 }
 
 public struct Transit: WatBase {
-    
+	
+	public static let sharedInstance = Transit()
+	
     /**
      [GET /transit/grt](https://github.com/uWaterloo/api-documentation/blob/master/v2/transit/grt.md)
      
@@ -1196,6 +1234,8 @@ public struct Transit: WatBase {
 }
 
 public struct Weather: WatBase {
+	
+	public static let sharedInstance = Weather()
     
     /**
      [GET /weather/current](https://github.com/uWaterloo/api-documentation/blob/master/v2/weather/current.md)
